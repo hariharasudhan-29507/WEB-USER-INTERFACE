@@ -1,0 +1,50 @@
+*{box-sizing:border-box}
+body{margin:0;background:#f2f2f2;color:#222;font-family:"Times New Roman",Times,serif;font-size:17px;line-height:1.5}
+header{background:#222;color:white;padding:15px;text-align:center}
+header h1{margin:5px;font-size:30px}
+nav a{color:white;text-decoration:none;margin:0 10px}
+nav a:hover{text-decoration:underline}
+.dropdown{display:inline-block;position:relative}
+.dropdown-content{display:none;position:absolute;background:white;border:1px solid #777;min-width:150px;text-align:left}
+.dropdown-content a{color:#222;display:block;padding:7px;margin:0}
+.dropdown:hover .dropdown-content{display:block}
+main{width:90%;max-width:950px;margin:25px auto}
+section,article,aside{background:white;border:1px solid #ccc;border-radius:6px;padding:18px;margin-bottom:20px}
+h2{border-bottom:2px solid #8b0000;padding-bottom:5px}
+h1{text-shadow:1px 1px 1px #777}
+.hero{text-align:center}
+.hero img{width:100%;max-width:430px;border:1px solid #555;border-radius:5px}
+.info-box{width:300px;max-width:100%;min-height:70px;padding:10px;border:1px solid #777;margin:15px 0}
+
+/* Simple fighter layout */
+.fighter{display:flex;align-items:flex-start;gap:25px;width:100%;padding:18px;margin:15px 0;border:1px solid #999;border-radius:6px;background:#fafafa}
+.fighter img{width:210px;height:250px;object-fit:cover;border:1px solid #777;flex-shrink:0}
+.fighter-info{flex:1;padding-top:2px}
+.fighter-info h3{margin:0 0 14px 0;font-size:24px}
+.fighter-info p{margin:8px 0}
+.fighter-note{margin-top:18px!important;padding-top:12px;border-top:1px solid #bbb}
+.fighter-description{margin:18px 0 5px 0;line-height:1.6}
+
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #777;padding:8px;text-align:left}
+th{background:#e5e5e5}
+form{background:white;border:1px solid #ccc;padding:20px;border-radius:6px}
+.form-row{margin-bottom:12px}
+.form-row label{display:block;margin-bottom:5px;font-weight:bold}
+input,select,textarea,button{font-family:"Times New Roman",Times,serif;font-size:16px}
+input:not([type="checkbox"]):not([type="range"]):not([type="color"]),select,textarea{width:100%;max-width:520px;min-height:36px;padding:7px;border:1px solid #777;border-radius:3px}
+input[type="range"]{width:100%;max-width:520px;display:block}
+input[type="color"]{width:70px;height:38px;padding:2px;display:block}
+.checkbox-row{margin:12px 0}
+.checkbox-row label{margin-left:5px}
+.form-buttons{margin-top:15px}
+button{padding:8px 15px;background:#ddd;border:1px solid #555;border-radius:3px;margin-right:8px}
+footer{background:#222;color:white;text-align:center;padding:15px;margin-top:30px}
+footer a{color:white}
+@media print{nav,form{display:none}body{background:white}}
+@media(max-width:650px){
+main{width:96%}
+.fighter{display:block;width:100%;margin:15px 0}
+.fighter img{width:100%;max-width:280px;height:auto;margin:0 auto 18px auto;display:block}
+.fighter-info{padding-top:0}
+}
