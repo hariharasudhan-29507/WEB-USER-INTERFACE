@@ -1,0 +1,26 @@
+@media screen and (max-width : 500px) {
+  body{
+    background-color:blue;
+  }
+  p{
+    font-family : sans-serif; 
+  }
+}
+
+@media print {
+  body{
+    background-color : white;
+  }
+}
+
+@media speech {
+  body{
+    background-color : brown;
+  }
+}
+
+@media all and (min-resolution : 1024dppx){
+  body{
+    background-color : green;
+  }
+}
